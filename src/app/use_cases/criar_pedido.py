@@ -12,5 +12,5 @@ class CriarPedido:
 				else:
 						raise ValueError("Tipo de desconto inválido, Use 'normal', 'vip' ou 'premium'.")
 			
-				return Pedido(cliente=cliente, valor=valor, desconto=desconto)
+				return Pedido(cliente=cliente, valor=valor, desconto=desconto)	
 				
