@@ -7,12 +7,12 @@ class IDesconto(abc.ABC):
 		
 class DescontoNormal(IDesconto):
 		def calcular(self, valor: float) -> float:
-				return valor * 0.1  # Exemplo de desconto de 10%
+				return valor * 0.1
 		
 class DescontoVIP(IDesconto):
 		def calcular(self, valor: float) -> float:
-				return valor * 0.2  # Exemplo de desconto de 20%
+				return valor * 0.2 
 		
 class DescontoPremium(IDesconto):
 		def calcular(self, valor: float) -> float:
-				return valor * 0.3  # Exemplo de desconto de 30%
+				return valor * 0.3
