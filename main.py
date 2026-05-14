@@ -1,10 +1,10 @@
-from app.adapters.repositories.memory_pedido_repository import MemoryPedidoRepository
-from app.frameworks.database.memory_database import MemoryDatabase
-from app.entities.desconto import DescontoNormal, DescontoVIP, DescontoPremium
-from app.entities.pedido import Pedido
-from app.use_cases.criar_pedido import CriarPedido
-from app.adapters.controllers.pedido_controller import PedidoController
-from app.presenters.pedido_presenter import PedidoPresenter
+from src.app.adapters.repositories.memory_pedido_repository import MemoryPedidoRepository
+from src.app.frameworks.database.memory_database import MemoryDatabase
+from src.app.entities.desconto import DescontoNormal, DescontoVIP, DescontoPremium
+from src.app.entities.pedido import Pedido
+from src.app.use_cases.criar_pedido import CriarPedido
+from src.app.adapters.controllers.pedido_controller import PedidoController
+from src.app.presenters.pedido_presenter import PedidoPresenter
 
 def main() -> None:
 		database = MemoryDatabase()
@@ -22,9 +22,9 @@ def main() -> None:
 		print(pedido2)
 		print(pedido3)
 
-		print("\Pedidos Salvos:")
+		print("\nPedidos Salvos:")
 		for pedido in controller.listar_pedidos():
 				print(pedido)
-				
+
 if __name__ == "__main__":
 		main()
